@@ -46,7 +46,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="tulip" \
     PRODUCT_NAME="tulip" \
-    BUILD_FINGERPRINT="xiaomi/tulip/tulip:8.1.0/OPM1.171019.011/V10.2.2.0.OEKMIXM:user/release-keys-by-rahul" \
-    PRIVATE_BUILD_DESC="tulip-user 8.1.0 OPM1.171019.011 V10.2.2.0.OEKMIXM release-keys-by-rahul"
+    BUILD_FINGERPRINT="xiaomi/tulip/tulip:8.1.0/OPM1.171019.011/V10.2.2.0.OEKMIXM:user/release-keys" \
+    PRIVATE_BUILD_DESC="tulip-user 8.1.0 OPM1.171019.011 V10.2.2.0.OEKMIXM release-keys"
 
 TARGET_VENDOR := Xiaomi
