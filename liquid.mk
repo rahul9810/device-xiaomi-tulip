@@ -19,14 +19,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 # $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/CalendarGoogle/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/mixplorer/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/GoogleContacts/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/GoogleClock/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/Browser/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/Keep/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/Musicolet/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/messenger/tulip.mk)
+$(call inherit-product-if-exists, device/xiaomi/apps/Snap/tulip.mk)
 
 # Inherit from tulip device
 $(call inherit-product, device/xiaomi/tulip/device.mk)
 
 # Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
-PRODUCT_NAME := mk_tulip
+PRODUCT_NAME := liquid_tulip
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
@@ -37,7 +46,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="tulip" \
     PRODUCT_NAME="tulip" \
-    BUILD_FINGERPRINT="xiaomi/tulip/tulip:8.1.0/OPM1.171019.011/V10.2.2.0.OEKMIXM:user/release-keys" \
-    PRIVATE_BUILD_DESC="tulip-user 8.1.0 OPM1.171019.011 V10.2.2.0.OEKMIXM release-keys"
+    BUILD_FINGERPRINT="xiaomi/tulip/tulip:8.1.0/OPM1.171019.011/V10.2.2.0.OEKMIXM:user/release-keys-by-rahul" \
+    PRIVATE_BUILD_DESC="tulip-user 8.1.0 OPM1.171019.011 V10.2.2.0.OEKMIXM release-keys-by-rahul"
 
 TARGET_VENDOR := Xiaomi
