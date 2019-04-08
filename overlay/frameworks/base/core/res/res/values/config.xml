@@ -544,5 +544,8 @@
 
     <!-- Whether show vendor mismatch or not -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
+    
+     <!-- Whether to enable smart clock feature -->
+    <bool name="config_enableSmartClock">true</bool>
 
 </resources>
